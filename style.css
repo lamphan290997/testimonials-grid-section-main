@@ -1,0 +1,156 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* reset css */
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 50px;
+}
+
+#main .content {
+    margin: 20px;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+#kira {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+}
+
+#kira,
+#first #daniel,
+#first #jonathan,
+#second #jeanette,
+#second #patrick{
+    box-shadow: hsl(0, 0%, 81%) 2px 2px 15px;
+    border-radius: 7px;
+}
+
+#kira .info, 
+#daniel .info, 
+#jonathan .info,
+#jeanette .info,
+#patrick .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#kira .info img, 
+#daniel .info img,
+#jonathan .info img,
+#jeanette .info img,
+#patrick .info img{
+    border-radius: 100%;
+    border: hsl(0, 0%, 81%) 2px solid;
+    margin-right: 15px;
+}
+
+#kira h5, 
+#daniel h5,
+#jonathan h5,
+#jeanette h5,
+#patrick h5{
+    color: hsl(0, 0%, 81%);
+}
+
+#kira p, 
+#daniel p,
+#jonathan p,
+#jeanette p,
+#patrick p{
+    color: hsl(0, 0%, 81%);
+    margin-top: 15px;
+}
+
+#first, #second{
+    display: flex;
+    flex-direction: row;
+}
+
+#second{
+    margin-top: 15px;
+}
+
+#first #daniel{
+    background-color: hsl(263, 55%, 52%);
+    margin-right: 15px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 5%;
+}
+
+#first #jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+
+#second #jeanette{
+    background-color: hsl(0, 0%, 100%);
+    margin-right: 15px;
+    color: black;
+}
+
+#second #patrick{
+    background-color: hsl(219, 29%, 14%);
+}
+
+/* mobile */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 375px) and (max-device-width : 740px) {
+    /* Styles */
+#main{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 15px;
+}
+
+#card, 
+#first #daniel{
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+#first, #second{
+    display: flex;
+    flex-direction: column;
+}
+
+#first #daniel{
+    margin-right: 0px;
+}
+
+#second #jeanette{
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+#kira {
+    width: 100%;
+}
+
+}
+/* mobile */
